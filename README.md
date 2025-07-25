@@ -1,22 +1,16 @@
 # helloworld
 Hello Worldプロジェクト
 
-## Javaでブラウザに"Hello World"を表示するアプリ
+## Spring Bootでブラウザに"Hello World"を表示するアプリ
 
 ### 実行方法
-1. Javaコンパイラでソースをコンパイルします。
+1. Mavenでアプリケーションを起動します。
 
 ```bash
-javac src/HelloWorldServer.java
+mvn spring-boot:run
 ```
 
-2. 実行します。
-
-```bash
-java HelloWorldServer
-```
-
-3. ブラウザで `http://localhost:8080/` にアクセスすると "Hello World" が表示されます。
+2. ブラウザで `http://localhost:8080/` にアクセスすると "Hello World" が表示されます。
 
 ### 依存関係
-- Java標準ライブラリのみを使用しています。追加の外部ライブラリは不要です。
+- Spring Boot 3.x (spring-boot-starter-web)
